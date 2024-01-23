@@ -28,8 +28,8 @@ export default async function Home() {
     <main>
       <div className="grid grid-cols-3 gap-8">
         {recipes.map((recipe) => (
-          <Card key={recipe.id} className="">
-            <CardHeader>
+          <Card key={recipe.id} className="flex flex-col justify-between">
+            <CardHeader className="flex-row gap-4 items-center">
               <div>
                 <CardTitle>{recipe.title}</CardTitle>
                 <CardDescription>{recipe.time} mins to cook.</CardDescription>
@@ -38,8 +38,8 @@ export default async function Home() {
             <CardContent>
               <CardDescription>{recipe.description}</CardDescription>
             </CardContent>
-            <CardFooter>
-              <button className="m-4">View Recipe</button>
+            <CardFooter className="flex justify-between">
+              <button>View Recipe</button>
               <p>{recipe.vegan ? "Vegan" : "Not Vegan!"}</p>
             </CardFooter>
           </Card>
