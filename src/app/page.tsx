@@ -24,7 +24,7 @@ async function getRecipes(): Promise<Recipe[]> {
 
 
   // Delay response as an excuse to show off the loader
-  await new Promise((resolve) => setTimeout(resolve, 3000));
+  await new Promise((resolve) => setTimeout(resolve, 1000));
 
   return response.json();
 }
