@@ -17,7 +17,7 @@ export default function SkeletonCard() {
      <Skeleton className="h-4 w-1/2 mt-4"/>
     </CardContent>
     <CardFooter>
-
+      <Skeleton className="h-10 w-28"/>
     </CardFooter>
   </Card>
   )
